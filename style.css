@@ -1,0 +1,111 @@
+/* Config de documento */
+
+* {
+     font-family: 'Poppins', sans-serif;
+}
+
+body {
+     background-color: rgb(28, 1, 34);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+}
+
+/* Conteudo alculadora  */
+.container {
+     background-color: rgb(43, 1, 55);
+     box-shadow: 5px 5px 28px #130118;
+     border-radius: 5%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 330px;
+     min-height: 400px;
+     padding: 20px;
+}
+
+.display-area {
+     margin-top: 10px;
+     margin-bottom: 30px;
+     max-width: 100%;
+}
+
+#display {
+     width: 230px;
+     height: 38px;
+     border-radius: 6px;
+     border-color: transparent;
+     background-color: #efcff8;
+     color: #2a0136;
+     text-align: end;
+}
+
+.buttons {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 10px;
+}
+
+.btn-simple {
+     min-width: 60px;
+     height: 48px;
+     background-color: #1f0227;
+     color: aliceblue;
+     font-weight: 600;
+     font-size: 24px;
+     border-radius: 10px;
+     border-color: transparent;
+     box-shadow: 2px 3px 8px #130119af;
+}
+
+.btn-special {
+     width: 60px;
+     height: 48px;
+     background-color: #d59010;
+     color: rgb(1, 9, 16);
+     font-weight: 600;
+     font-size: 24px;
+     border-radius: 10px;
+     border-color: transparent;
+}
+
+/* Botões específicos */
+.btn-zero {
+     grid-column: span 2;
+}
+
+.btn-plus {
+     grid-row: span 2;
+     height: 100px;
+}
+
+.btn-equal {
+     grid-row: span 2;
+     height: 100px;
+}
+
+
+/* ---- ESTADOS DOS BOTÕES ---- */
+
+/* Hover */
+.btn-simple:hover {
+     background-color: #330142;
+     transition: all 0.3s;
+}
+
+.btn-special:hover {
+     background-color: #ebb70c;
+     transition: all 0.3s;
+}
+
+/* Click */
+.btn-simple:active {
+     background-color: #a904dc;
+     transition: all 0.2s;
+}
+
+.btn-special:active {
+     background-color: #ffe20a;
+     transition: all 0.2s;
+}

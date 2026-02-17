@@ -4,6 +4,9 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="stylesheet" href="style.css">
      <title>Calculadora</title>
 </head>
 
@@ -22,7 +25,7 @@
                <button class="btn-simple" data-value="7" data-type="number">7</button>
                <button class="btn-simple" data-value="8" data-type="number">8</button>
                <button class="btn-simple" data-value="9" data-type="number">9</button>
-               <button class="btn-simple" data-value="+" data-type="operation">+</button>
+               <button class="btn-simple btn-plus" data-value="+" data-type="operation">+</button>
 
                <button class="btn-simple" data-value="4" data-type="number">4</button>
                <button class="btn-simple" data-value="5" data-type="number">5</button>
@@ -31,10 +34,10 @@
                <button class="btn-simple" data-value="1" data-type="number">1</button>
                <button class="btn-simple" data-value="2" data-type="number">2</button>
                <button class="btn-simple" data-value="3" data-type="number">3</button>
-
-               <button class="btn-simple" id="btn-zero" data-value="0" data-type="number">0</button>
+               <button class="btn-special btn-equal" data-value="=" data-type="action">=</button>
+               
+               <button class="btn-simple btn-zero" data-value="0" data-type="number">0</button>
                <button class="btn-simple" data-value="." data-type="number">.</button>
-               <button class="btn-special" id="btn-equal" data-value="=" data-type="action">=</button>
           </div>
      </div>
 </body>
