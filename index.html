@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Calculadora</title>
+</head>
+
+<body>
+     <div class="container">
+          <div class="display-area">
+               <input type="text" id="display" readonly>
+          </div>
+
+          <div class="buttons">
+               <button class="btn-special" data-value="c" data-type="action">C</button>
+               <button class="btn-simple" data-value="/" data-type="operation">÷</button>
+               <button class="btn-simple" data-value="*" data-type="operation">X</button>
+               <button class="btn-simple" data-value="-" data-type="operation">-</button>
+
+               <button class="btn-simple" data-value="7" data-type="number">7</button>
+               <button class="btn-simple" data-value="8" data-type="number">8</button>
+               <button class="btn-simple" data-value="9" data-type="number">9</button>
+               <button class="btn-simple" data-value="+" data-type="operation">+</button>
+
+               <button class="btn-simple" data-value="4" data-type="number">4</button>
+               <button class="btn-simple" data-value="5" data-type="number">5</button>
+               <button class="btn-simple" data-value="6" data-type="number">6</button>
+
+               <button class="btn-simple" data-value="1" data-type="number">1</button>
+               <button class="btn-simple" data-value="2" data-type="number">2</button>
+               <button class="btn-simple" data-value="3" data-type="number">3</button>
+
+               <button class="btn-simple" id="btn-zero" data-value="0" data-type="number">0</button>
+               <button class="btn-simple" data-value="." data-type="number">.</button>
+               <button class="btn-special" id="btn-equal" data-value="=" data-type="action">=</button>
+          </div>
+     </div>
+</body>
+
+</html>
